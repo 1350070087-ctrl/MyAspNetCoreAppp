@@ -1,0 +1,99 @@
+# Dependencies
+**/*.csproj.nuget.dgspec
+**/*.csproj.user
+**/*.csproj.DotSettings.user
+*.*cache
+!**/.vsconfig
+**/.NuGet
+**/.vs/**
+!**/.vs/Backup/
+!**/.vs/Settings/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Oo]ut/
+[xX]64/
+[xX]86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio folder
+.vs/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# Web Application cache and log files
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~preview*/
+
+# Publish output
+**/Properties/Package.appxmanifest
+**App_Data/**
+**/Properties/PublishProfiles/**
+
+# NuGet v3 cache
+httpCache-old/
+httpCache-PreRelease/
+
+# NuGet Package and cache
+**/*.nupkg
+**/*.snupkg
+**/*.nuspec
+packages-folders/
+packages-cache/
+packages-tmp/
+**/packages/
+
+# Diagnostics
+**/*.dSYM.zip
+**/*.dSYM
+
+# Roslyn cache directories
+**/.roslyn/
+
+# SQL Server database files
+**/*.mdf
+**/*.ldf
+**/*.ndf
+
+# Temporary files
+**/*.tmp
+**/*.cache
+**/*.log
+**/*.rdl.data
+**/*.rptproj.rsuser
+
+# Backup & report files from converting an old project file
+**/.VS.NuGet.State.json
+**/*.rptproj.bak
+
+# Runtime
+**/*.runtimeconfig.dev.json
+
+# ASP.NET Scaffolding
+**/.vs/
+ScaffoldingReadMe.txt
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet Publish folder
+**/[Nn]uget[Tt]emp/
+**/[Nn]uget/

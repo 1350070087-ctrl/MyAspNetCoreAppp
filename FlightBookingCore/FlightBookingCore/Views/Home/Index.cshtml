@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ - Đặt vé máy bay";
+}
+
+<!-- CSS flatpickr -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<div class="text-center">
+    <h1 class="display-4">Chào mừng đến với FlightBooking</h1>
+    <p>Tìm kiếm và đặt vé máy bay nhanh chóng, dễ dàng.</p>
+</div>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h3 class="card-title">Tìm kiếm chuyến bay</h3>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="Search" method="post">
+                <div class="row">
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Điểm đi:</label>
+                        <input type="text" class="form-control"
+                               name="diemDi" required placeholder="Ví dụ: Hà Nội">
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Điểm đến:</label>
+                        <input type="text" class="form-control"
+                               name="diemDen" required placeholder="Ví dụ: Hồ Chí Minh">
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Ngày đi:</label>
+                        <input type="text" class="form-control"
+                               id="ngayDi" name="ngayDi"
+                               placeholder="Chọn ngày" required>
+                    </div>
+
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success btn-lg">
+                        Tìm chuyến bay
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- JS flatpickr -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+    flatpickr("#ngayDi", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+</script>
